@@ -19,13 +19,10 @@ To write a program to perform selection sort and insertion sort using python pro
 5.	Repeat the steps 2 to 4 for sorting all the elements in the array.
 ## Program:
 i)	#Selection Sort
-```
-
-''' 
 Program for linear search method to match the item in a list
 Developed by: TH KARTHIK KRISHNA
 RegisterNumber: 23014165
-'''
+
 i)	#Selection Sort
 ```
 def selection_sort(nums):
@@ -41,15 +38,9 @@ list_of_nums = eval(input())
 values=selection_sort(list_of_nums)
 print(values)
 
-
-
-
 ```
 ii)	#Insertion Sort
-```
 
-
-''' 
 Program to find the element in a list using Binary Search(Iterative Method)..
 Developed by: TH KARTHIK KRISHNA
 RegisterNumber: 23014165
