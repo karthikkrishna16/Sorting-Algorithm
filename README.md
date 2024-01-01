@@ -26,24 +26,20 @@ Program for linear search method to match the item in a list
 Developed by: TH KARTHIK KRISHNA
 RegisterNumber: 23014165
 '''
-def linearSearch(array,n,k):
-    for i in range(0,n):
-        if(array[i] == k):
-            return i
-    return -1
+i)	#Selection Sort
+```
+def selection_sort(nums):
+    for i in range(len(nums)):
+        low_index=i
+        for j in range(i+1,len(nums)):
+            if nums[j]<nums[low_index]:
+                low_index=j
+        nums[i],nums[low_index]=nums[low_index],nums[i]
+    return nums
     
-array = eval(input())
-k = eval(input()) 
-n= len(array)
-array.sort()
-result = linearSearch(array,n,k)
-if(result == -1):
-    print(array)
-    print("Element not found")
-else:
-    print(array)
-    print("Element found at index: ",result)
-
+list_of_nums = eval(input())
+values=selection_sort(list_of_nums)
+print(values)
 
 
 
@@ -58,38 +54,33 @@ Program to find the element in a list using Binary Search(Iterative Method)..
 Developed by: TH KARTHIK KRISHNA
 RegisterNumber: 23014165
 '''
-def binarySearchIter(array, k, low, high):
-    while low <= high:
-        mid =low + (high - low)//2
-        if array[mid] == k:
-            return mid
-            
-        elif array[mid] < k:
-            low = mid + 1
-        else:
-            high = mid - 1
-    return -1
-array = eval(input())
-array.sort()
-k = eval(input())
-result = binarySearchIter(array, k, 0, len(array)-1)
-if(result == -1):
-    print(array)
-    print("Element not found")
-else:
-    print(array)
-    print("Element found at index: ",result)
+def insertion_sort(nums):
+    for i in range(1,len(nums)):
+        item=nums[i]
+        j=i-1
+        while j>=0 and nums[j]>item:
+            nums[j+1]=nums[j]
+            j-=1
+        nums[j+1]=item
+    return nums
     
-
+list_of_nums = eval(input())
+value=insertion_sort(list_of_nums)
+print(value)
 
 
 ```
 
 ## Output:
-![Screenshot 2023-12-30 230010](https://github.com/karthikkrishna16/Sorting-Algorithm/assets/148514663/eeb38ae7-df8b-49d2-b08f-849a8d0a7003)
+i) #Selection Sort
 
-![Screenshot 2023-12-30 230043](https://github.com/karthikkrishna16/Sorting-Algorithm/assets/148514663/c322f3bd-951a-41af-9c99-4a12bd9d7a39)
 
+![Screenshot (16)](https://github.com/anushanirudh/Sorting-Algorithm/assets/151725737/a33513b6-3ceb-4984-80a4-e33cc7258602)
+
+ii) #Insertion Sort
+
+
+![Screenshot (17)](https://github.com/anushanirudh/Sorting-Algorithm/assets/151725737/95d3b761-ead8-4aa2-a1d8-dbaa0434f094)
 
 ## Result:
 Thus the program is written to perform selection sort and insertion sort using python programming.
