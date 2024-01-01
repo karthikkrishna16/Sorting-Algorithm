@@ -38,14 +38,13 @@ list_of_nums = eval(input())
 values=selection_sort(list_of_nums)
 print(values)
 
+
+
+
+
 ```
 ii)	#Insertion Sort
-
-Program to find the element in a list using Binary Search(Iterative Method)..
-Developed by: TH KARTHIK KRISHNA
-RegisterNumber: 23014165
-'''
-def insertion_sort(nums):
+```def insertion_sort(nums):
     for i in range(1,len(nums)):
         item=nums[i]
         j=i-1
@@ -60,18 +59,23 @@ value=insertion_sort(list_of_nums)
 print(value)
 
 
+
+
+
+
 ```
 
 ## Output:
 i) #Selection Sort
 
+![image](https://github.com/karthikkrishna16/Sorting-Algorithm/assets/148514663/7045de8c-ada1-4971-aa00-3ab1b5f30066)
 
-![Screenshot (16)](https://github.com/anushanirudh/Sorting-Algorithm/assets/151725737/a33513b6-3ceb-4984-80a4-e33cc7258602)
+
 
 ii) #Insertion Sort
 
+![image](https://github.com/karthikkrishna16/Sorting-Algorithm/assets/148514663/fa53899b-db6e-4d35-8644-b5a327ea35c5)
 
-![Screenshot (17)](https://github.com/anushanirudh/Sorting-Algorithm/assets/151725737/95d3b761-ead8-4aa2-a1d8-dbaa0434f094)
 
 ## Result:
 Thus the program is written to perform selection sort and insertion sort using python programming.
